@@ -1,99 +1,109 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
- <body background="eve.jpg">
-<h1><center>EVEREST LODGE</center></h1> 
-<style>
-    .navbar {
-        background-color: cyan;
-        overflow: hidden;
-    }
-    
-     body {
-        background-repeat: no-repeat;
-        background-size: cover;
-     }
-    .navbar button {
-        float: left;
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .navbar button:hover {
-        background-color: cyan;
-    }
-    ..p{
-        font-size: medium;
-
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عبد العزيز Lodge</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>عبد العزيز Lodge</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<div class="navbar">
-<button>Home</button>
-<button>About Us</button>
-<button>Contact Us</button>
-<button>FAQs</button>
-</div>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to عبد العزيز Lodge, your ideal retreat for relaxation and comfort. Located in a tranquil setting, our lodge offers a blend of luxury and nature, perfect for a peaceful getaway.</p>
+        </div>
+    </section>
 
-<!-- Rest of your content goes here -->
+    <section id="rooms">
+        <div class="container">
+            <h2>Our Rooms</h2>
+            <div class="room">
+                <h3>Deluxe Room</h3>
+                <p>Experience ultimate comfort in our Deluxe Rooms, featuring stunning views and premium amenities.</p>
+            </div>
+            <div class="room">
+                <h3>Standard Room</h3>
+                <p>Our Standard Rooms provide cozy accommodations with all the essential features for a pleasant stay.</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="amenities">
+        <div class="container">
+            <h2>Amenities</h2>
+            <ul>
+                <li>Free Wi-Fi</li>
+                <li>Swimming Pool</li>
+                <li>Restaurant</li>
+                <li>Spa and Wellness Center</li>
+                <li>24/7 Front Desk</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="booking">
+        <div class="container">
+            <h2>Booking Information</h2>
+            <p>To book a stay with us, please contact us through the contact section or use our online registration form below.</p>
+        </div>
+    </section>
+
+    <section id="register">
+        <div class="container">
+            <h2>Register</h2>
+            <form action="register.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Check-in Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="room">Room Type:</label>
+                <select id="room" name="room" required>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="standard">Standard Room</option>
+                </select>
+
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@abdulazizkhamis06082003@gmail.com</p>
+            <p>Phone: +255 759 144349</p>
+            <p>Address: 123 عبد العزيز Uweje Street, Magomeni, Tanzania, 12345</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 عبد العزيز Lodge. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-
-<h2><marquee scrollamount ="15" bgcolor ="cyan" direction ="left"><b>WELCOME TO EVEREST LODGE</b></marquee></h2>
-    </body>
-<style>
-.moc{
-color: white;
-}
-</style>
- 
-<script>
-function validate(){
-    var firstname =document.myform.firstname.value;
-    var secondname =document.myform.secondname.value;
-    if(firstname==null || firstname==""){
-        alert("fill your first name");
-        return false;
-    }
-    else if(secondname==null || secondname=="") {
-        alert("fill your second name");
-        return false;}
-}
-</script>
-</head>
-<form firstname = "myform" method="post">
-<b><p>FIRST NAME:</p></b></c><input type="text" value="firstname" name="name"><br>
-<b>LAST NAME:</b><tab><input type="TEXT"value="lastname" name="name"><br>
-<b>GENDER</b> <input type="radio" name="sex" value="male">male
-    <input type="radio"name="sex" value="female">female<br><br>
-<b>ROOM NUMBER</b> &nbsp;<input type="checkbox"value="110">110
-    <input type="radio"value="112">112
-        <input type="checkbox" name="room" value="111">111
-        <input type="checkbox" name="room" value="113">113
-        <input type="checkbox" value="114">114
-        <input type="checkbox"value="115">115
-        <input type="checkbox"value="116">116
-        <input type="checkbox"value="117">117
-        <input type="checkbox"value="118">118
-        <input type="checkbox"value="119">119
-        <input type="checkbox"value="120">120 <br><br>
-    NUMBER OF DAYS &nbsp; <select>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>1 week</option>
-    </select>
-    <input type="submit" value="Register" onclick="validate ()">
-</form>
-
 </html>
